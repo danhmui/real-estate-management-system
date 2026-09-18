@@ -1,5 +1,6 @@
 package com.javaweb.api.admin;
 
+import com.javaweb.constant.SystemConstant;
 import com.javaweb.dto.BuildingResponseDTO;
 import com.javaweb.dto.StaffResponseDTO;
 import com.javaweb.model.dto.AssignmentBuildingDTO;
@@ -39,7 +40,7 @@ public class BuildingAPI {
             return ResponseEntity.ok(buildingResponseDTO);
         }catch (Exception e){
             e.printStackTrace();
-            return ResponseEntity.badRequest().body("Hệ thống gặp lỗi: " + e.getMessage());
+            return ResponseEntity.badRequest().body(SystemConstant.ERROR_SYSTEM);
         }
     }
 
@@ -48,7 +49,7 @@ public class BuildingAPI {
         if(ids != null){
             buildingService.deleteAllBuildingEntitiesByIdIn(ids);
         }
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok(SystemConstant.DELETE_SUCCESS);
     }
 
 
@@ -64,7 +65,7 @@ public class BuildingAPI {
     @PostMapping("/buildingassignments")
     public ResponseEntity<?> updateAssignment(@RequestBody AssignmentBuildingDTO assignmentBuildingDTO){
         buildingService.updateAssignment(assignmentBuildingDTO);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok(SystemConstant.UPDATE_SUCCESS);
     }
 }
 

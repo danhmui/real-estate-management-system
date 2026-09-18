@@ -45,6 +45,8 @@ public class UserController {
 	@RequestMapping(value = "/admin/user-edit", method = RequestMethod.GET)
 	public ModelAndView addUser(@ModelAttribute(SystemConstant.MODEL) UserDTO model, HttpServletRequest request) {
 		ModelAndView mav = new ModelAndView("admin/user/edit");
+        if(!SecurityUtils.getAuthorities().contains(SystemConstant.MANAGER_ROLE))
+            return new ModelAndView("redirect:/access-denied");
 		model.setRoleDTOs(roleService.getRoles());
 		initMessageResponse(mav, request);
 		mav.addObject(SystemConstant.MODEL, model);

@@ -50,6 +50,8 @@ public class BuildingService implements IBuildingService {
 
     @Override
     public BuildingResponseDTO createOrUpdateBuilding(BuildingDTO buildingDTO) {
+        if(!SecurityUtils.getAuthorities().contains(SystemConstant.MANAGER_ROLE))
+            throw new RuntimeException("Nhân viên không có quyền chỉnh sửa tòa nhà!");
         BuildingEntity buildingEntity = buildingConverter.toBuildingEntity(buildingDTO);
         saveThumbnail(buildingDTO, buildingEntity);
         if(buildingDTO.getId() != null)

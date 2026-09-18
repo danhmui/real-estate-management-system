@@ -1,4 +1,11 @@
-/.metadata/
+# IntelliJ IDEA
 .idea/
-target/
 *.iml
+
+# Maven build & classes
+/target/
+/classes/
+
+# OS generated files
+.DS_Store
+Thumbs.db

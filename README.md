@@ -24,3 +24,14 @@ A web-based Real Estate Management System built with Spring Boot, Spring Data JP
    spring.datasource.password = your_password
 
 4. Run the Spring Boot application from your IDE or using Maven.
+
+## 🔑 Test Accounts
+You can use the following default accounts to test different roles in the system:
+
+* **Manager Account:**
+  * Username: `nguyenvana`
+  * Password: `123456`
+  
+* **Staff Account:**
+  * Username: `nguyenvanb`
+  * Password: `123456`

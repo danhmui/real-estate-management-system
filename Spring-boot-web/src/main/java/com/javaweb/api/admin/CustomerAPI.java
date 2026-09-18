@@ -2,10 +2,8 @@ package com.javaweb.api.admin;
 
 import com.javaweb.constant.SystemConstant;
 import com.javaweb.dto.CustomerResponseDTO;
-import com.javaweb.kafka.JsonKafkaProducerService;
-import com.javaweb.model.dto.AssignmentCustomerDTO;
 import com.javaweb.dto.StaffResponseDTO;
-import com.javaweb.model.dto.BuildingDTO;
+import com.javaweb.model.dto.AssignmentCustomerDTO;
 import com.javaweb.model.dto.CustomerDTO;
 import com.javaweb.repository.CustomerRepository;
 import com.javaweb.security.utils.SecurityUtils;

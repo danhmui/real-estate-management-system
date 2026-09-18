@@ -28,9 +28,8 @@ import java.util.Map;
 @Controller(value = "buildingControllerOfAdmin")
 public class BuildingController {
     @Autowired
-    private RentAreaRepository rentAreaEntityRepository;
-    @Autowired
     private UserService userService;
+
     @Autowired
     private BuildingService buildingService;
 
@@ -79,7 +78,7 @@ public class BuildingController {
             mav.addObject("modelInsertOrUpdate", new BuildingDTO());
             mav.addObject("mode","insert");
         }
-SS
+
         return mav;
     }
 
