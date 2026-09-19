@@ -16,44 +16,47 @@ A web-based Real Estate Management System built with Spring Boot, Spring Data JP
    ```bash
    git clone https://github.com/danhmui/real-estate-management-system.git
 
-2. Create a MySQL database named project_db and import your SQL script.
+2. **Create a MySQL database named project_db and import your SQL script.**
 
-3. Configure your database credentials in spring-boot-web/src/main/resources/application.properties:
+3. **Configure your database credentials in spring-boot-web/src/main/resources/application.properties:**
     ```properties
    spring.datasource.url = jdbc:mysql://localhost:3306/project_db
    spring.datasource.username = root
    spring.datasource.password = your_password
 
-4. IDE & Project Configuration (IntelliJ IDEA)
-    Open the project folder in IntelliJ IDEA.
+4. **IDE & Project Configuration (IntelliJ IDEA)**
+    
+    * Open the project folder in IntelliJ IDEA.
 
-    Configure Project Structure:
+    * Configure Project Structure:
 
-    Go to File > Project Structure (Ctrl + Alt + Shift + S).
+        * Go to File > Project Structure (Ctrl + Alt + Shift + S).
 
-    Set Project SDK to Java 8 (or your compatible JDK version).
+        * Set Project SDK to Java 8 (or your compatible JDK version).
 
-    Set Project language level to 8 - Lambdas, type annotations, etc..
+        * Set Project language level to 8 - Lambdas, type annotations, etc..
 
-    Sync Maven:
+    * Sync Maven:
 
-    Open the Maven tab and click Reload All Maven Projects to download all dependencies.
+        * Open the Maven tab and click Reload All Maven Projects to download all dependencies.
 
-5. Configure Apache Tomcat (External)
-    Since this project runs on an external Tomcat server:
+5. **Configure Apache Tomcat (External)**
 
-    Go to Add Configuration... > Tomcat Server > Local.
+    * **Since this project runs on an external Tomcat server:**
 
-    Go to the Deployment tab, click +, select Artifact..., and choose the war exploded artifact of the project.
+        * Go to Add Configuration... > Tomcat Server > Local.
 
-    Set the Application context (e.g., / or /real-estate).
+        * Go to the Deployment tab, click +, select Artifact..., and choose the war exploded artifact of the project.
 
-    Click Apply and OK.
+        * Set the Application context (e.g., / or /real-estate).
 
-6. Run the Application
-    Click the Run (▶) button for Tomcat in IntelliJ IDEA.
+        * Click Apply and OK.
 
-    Open your browser and navigate to: http://localhost:8080/[your-context-path]
+6. **Run the Application**
+    
+    * Click the Run (▶) button for Tomcat in IntelliJ IDEA.
+
+    * Open your browser and navigate to: http://localhost:8080/[your-context-path]
 
 ## 🔑 Test Accounts
 You can use the following default accounts to test different roles in the system:
