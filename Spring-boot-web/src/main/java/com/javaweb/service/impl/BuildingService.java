@@ -42,8 +42,6 @@ public class BuildingService implements IBuildingService {
     @Autowired
     private ModelMapper modelMapper;
     @Autowired
-    private BuildingSearchBuilderConverter buildingSearchBuilderConverter;
-    @Autowired
     private BuildingConverter buildingConverter;
     @Autowired
     private UploadFileUtils uploadFileUtils;
