@@ -8,7 +8,7 @@
     <title>Đăng ký tài khoản</title>
 
     <link rel="stylesheet" href="<c:url value='/admin/assets/css/bootstrap.min.css'/>" />
-    <link rel="stylesheet" href="<c:url value='/admin/assets/font-awesome/4.5.0/css/font-awesome.min.css'/>" />
+    <link rel="stylesheet" href="<c:url value='/admin/assets/font-awesome/4.2.0/css/font-awesome.min.css'/>" />
     <link rel="stylesheet" href="<c:url value='/admin/assets/css/ace.min.css'/>" />
 
     <script src="<c:url value='/admin/assets/js/jquery.2.1.1.min.js'/>"></script>
