@@ -1,4 +1,4 @@
-# Real Estate Management System (Project 2)
+# Real Estate Management System
 
 A web-based Real Estate Management System built with Spring Boot, Spring Data JPA, MySQL, and JSP.
 
